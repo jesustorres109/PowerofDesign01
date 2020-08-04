@@ -1,0 +1,504 @@
+body{
+    
+  
+    background-size: 100% 100%;
+    background-attachment: fixed;
+	
+	animation: body 30s infinite;
+	
+	
+	
+}
+
+@keyframes body{
+	
+	0%, 30%{
+        background-image: url(../imagenes/fondoservicios04.jpg);
+        opacity: 1;
+    }
+    31%, 34%{
+        opacity:0,1;
+    }
+	
+	35%, 65%{
+		background-image: url(../imagenes/fondoservicios4.jpg);
+		opacity: 1;
+	}
+    
+    66%, 69%{
+        opacity: 0,1;
+    }
+	70%, 100%{
+        opacity: 1;
+		background-image: url(../imagenes/fondoservicios03.jpg);
+	}
+}
+    
+
+
+
+
+}	
+/*menu*/
+
+.redessociales{
+	display: block;
+	width:100%;
+	height:50px;
+	background:;
+	border-radius: 3px 3px 3px 3px;
+	
+	
+	
+}
+	
+.img-athumbnail{
+	width: 40px;
+	height: auto;
+	float: left;
+	margin: 8px;
+	
+	
+	
+}
+	
+.sociales{
+	width: 100%;
+	
+	list-style: none;
+	padding: 0px;
+	
+}
+	
+.sociales ul{
+	list-style: none;
+}
+
+.social> li{
+	position: relative;
+	display: inline-block;
+	
+	
+}
+
+.social > li > a > .img-athumbnail{
+	
+	display: block;
+	
+}
+	
+.contactar{
+	
+	clear: both;
+	width: 13%;
+	height: 33px;
+	margin-left: auto;
+    text-align: auto;
+	margin-bottom: 100px;
+	border-radius: 18px 18px 18px 18px;
+	background-size: 100% 100%;
+	
+	animation: contactar 1s infinite;
+	
+	
+	
+}
+
+@keyframes contactar{
+	
+	0%, 30%{
+		background: #390;
+	}
+	
+	35%, 65%{
+		background: #06C;
+		
+	}
+	
+	70%, 100%{
+		background: #9C0;
+	}
+}
+	
+
+
+
+.contactar ul{
+	list-style: none;
+}
+
+.contactar li a{
+	display: block;
+	text-decoration: none;
+	font-family: Helvetica;
+	font-size: 25px;
+	color: #FFF;
+	text-align: center;
+	
+	
+	
+}
+
+.contactar li{
+	position: relative;
+	display: inline-block;
+	
+}
+
+	
+	
+header{
+	width:100%;
+	background:url(../imagenes/jesu.png);
+	text-align:center;
+	padding-top: 3px;
+    border-radius: 0px 0px 6px 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+}
+
+
+.navegacio{
+	width:100%;
+	height: 40px;
+	margin: 1px auto 0px;
+	background:0;
+	
+	
+	
+}
+
+
+.navegacio ul{
+	list-style: none;	
+	
+}
+
+
+
+
+.menu > li{
+	position:relative;
+	display:inline-block;
+	
+}
+	
+.menu > li > a{
+	display:block;
+	padding: 0px 15px;
+	color:#FFF;
+	font-family:Arial, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+	
+	
+	
+	
+}
+
+.menu li a:hover{
+	color:#930;
+	transition: all .3s;
+	
+	
+/*submenu*/	
+	
+}
+
+.submenu{
+	position: absolute;
+	background:url(../imagenes/jesu.png);
+	width:160%;
+	visibility:hidden;
+	opacity:0;
+	transition:opacity 2.5s;
+	border-radius:0px 0px 3px 3px;
+	
+}
+
+.submenu li a{
+	display: block;
+	padding: 4px;
+	color: #fff;
+	font-size: 18px;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	text-align: justify;
+	position: relative;
+	font-weight: bold;
+	
+	
+	
+	
+	
+}
+
+
+.menu li:hover .submenu{
+	visibility:visible;
+	opacity: 1;
+	
+	
+}
+
+
+/*slider*/
+
+
+img{
+    max-width: 100%;
+}
+
+.container-all{
+    position:relative;
+    max-width: 100%;
+    width: 100%;
+	height: 300px;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+}
+
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 1900ms;
+    animation-name: autoplay;
+    animation-duration: 10.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 10px;
+    height: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 500ms;
+}
+
+.pagination-item:hover{
+    transform: scale(2);
+}
+
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+    background: #fff;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background: #fff;
+}
+
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+    background: #fff;
+}
+
+
+input[id="4"]:checked ~ .slide{
+	animation: none;
+	transform: translate3d(calc(-100% * 3), 0, 0);
+}
+
+input [id="4"]:checked ~ .pagination .pagination-item[for="3"]{
+	background: #FFF;
+}
+
+
+@keyframes autoplay{
+    25%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+
+    50%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+
+    75%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+	
+	100%{
+		transform: translate3d(calc(-100% * 3), 0, 0);
+	}
+	
+}
+
+
+
+
+.cuerpo{
+
+   width: 94%;
+   height: auto;
+   background:0;
+   margin-right: 20px;
+   margin-top: 40px;
+   display: block;
+   
+  
+   
+   
+
+}
+
+
+
+.cajas{
+    width: 25%;
+    float: left;
+	background-color: rgba(0, 0, 0, 0.139);
+    background-size: 70% ;
+    height: 360px;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: 2s;
+	cursor: zoom-in;
+	border-radius: 5px 5px 5px 5px;
+    
+
+    
+ 
+}
+
+.img-athumbnail09{
+    width: 120px;
+    height:120px;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+
+.textodecajas{
+    color: white;
+    font-size: 21px;
+    font-family:arial;
+    text-align: center;
+}
+
+.titulodecaja{
+    font-family: Arial;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+#footer{
+    clear: both;
+	width: 100%;
+	height: 105px;
+	background-color: #036;
+	color: #FFF;
+	font-family:Arial, Helvetica;
+	font-weight: px bold;
+	font-size: 10px;
+	text-align: center;
+	border-radius: 50px 5px 50px 5px;
+	
+	
+}
+
+.img-athumbnail2{
+	width: 40px;
+	height: 40px;
+	margin-left: 8px;
+	
+}
+
+
+.menu9 > li{
+	position:relative;
+	display:inline-block;
+	margin-top: 8px;
+	
+}
+	
+.menu9 > li > a{
+	display:block;
+	padding: 0px 15px;
+	color:#FFF;
+	font-family:Arial, sans-serif;
+	font-weight: 0;
+	font-size: 16px;
+	text-decoration: none;
+	
+	
+	
+	
+}
+
+.menu9 li a:hover{
+	color:#930;
+	transition: all .3s;
+	
+	
+	
+}
+
+
